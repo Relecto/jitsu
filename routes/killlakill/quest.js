@@ -1,28 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var fs = require('fs');
 
-questions = [
-    {
-        picture: "/images/shiro.jpg",
-        question: "Кто изображен на картинке?",
-        variants: [
-            "Широ",
-            "Стефф",
-            "Шуви",
-            "Джибрил"
-        ]
-    },
-    {
-        picture: "/images/shiro.jpg",
-        question: "Кто изображен на картинке?",
-        variants: [
-            "Широ",
-            "Стефф",
-            "Шуви",
-            "Джибрил"
-        ]
-    }
-];
+
+router.use((req, res, next) => {
+    req.questions = JSON.parse(fs.readFileSync('questions/killlakill.json', 'utf8'));
+    next();
+});
 
 /* GET home page. */
 router.get('/question', function(req, res, next) {
@@ -35,10 +19,10 @@ router.get('/question', function(req, res, next) {
 
     let data = Object.assign(
         {
-            total: questions.length,
+            total: req.questions.length,
             number: req.session.questionIndex + 1
         },
-        JSON.parse(JSON.stringify(questions[req.session.questionIndex])));
+        JSON.parse(JSON.stringify(req.questions[req.session.questionIndex])));
 
     shuffle(data.variants);
 
@@ -46,18 +30,18 @@ router.get('/question', function(req, res, next) {
 });
 
 router.get('/answer', (req, res, next) => {
-    if (req.query.answer === questions[req.session.questionIndex].variants[0]) {
+    if (req.query.answer === req.questions[req.session.questionIndex].variants[0]) {
         req.session.score++;
     }
 
     req.session.questionIndex++;
 
-    if (req.session.questionIndex >= questions.length) {
+    if (req.session.questionIndex >= req.questions.length) {
         res.redirect('results');
         return;
     }
 
-    res.redirect('question');
+    res.redirect('/killlakill/question');
 });
 
 router.get('/results', (req, res, next) => {

@@ -1,7 +1,7 @@
 <img src="{{{picture}}}" />
 <h1>{{question}} ({{number}}/{{total}})</h1>
 
-<form action="/ngnl/answer">
+<form action="answer">
     {{#each variants}}
         <input type="radio", name="answer" value="{{{this}}}">{{this}}
     {{/each}}
