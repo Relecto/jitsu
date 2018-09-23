@@ -1,9 +1,21 @@
-<img src="{{{picture}}}" />
-<h1>{{question}} ({{number}}/{{total}})</h1>
+<link rel="stylesheet" href="/stylesheets/question.css">
 
-<form action="answer">
-    {{#each variants}}
-        <input type="radio", name="answer" value="{{{this}}}">{{this}}
-    {{/each}}
-    <input type="submit" value="Answer">
-</form>
+<main>
+
+        <div class="img_quiz">
+            <img src="{{{picture}}}">
+        </div>
+
+        <div class="text_quiz">
+            <h1>{{question}} ({{number}}/{{total}})</h1>
+
+            <form action="answer">
+                {{#each variants}}
+                    <div class="h2"><input type="radio", name="answer" value="{{{this}}}">{{this}}</div>
+                    <br>
+                {{/each}}
+                <div class="btn"><input type="submit" value="Answer"></div><br>
+            </form>
+        </div>
+
+</main>
