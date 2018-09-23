@@ -1,3 +1,7 @@
+html, body {
+    background-image: none;
+}
+
 #slides{
     /*position: relative;*/
     /*height: 150px;*/

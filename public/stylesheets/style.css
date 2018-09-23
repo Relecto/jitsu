@@ -6,6 +6,13 @@ html, body{
 
 body{
   font-family: 'Roboto', sans-serif;
+  background-size: contain;
+  /*position: fixed;*/
+  background: url("/img/bg_anime1.jpg") fixed;
+  background-size: cover;
+}
+main {
+  background-color: white;
 }
 
 header{
@@ -28,4 +35,14 @@ header{
 
 .logo span{
   font-size: 25px;
+}
+
+@media screen and (orientation: landscape){
+
+}
+
+@media screen and (orientation: portrait){
+  .logo{
+    display: block;
+  }
 }

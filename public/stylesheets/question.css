@@ -3,7 +3,7 @@ main{
 }
 
 .img_quiz {
-    height: 50vh;
+    max-height: 80vh;
     overflow: hidden;
 
 }
@@ -29,7 +29,11 @@ img {
 
 @media screen and (orientation: landscape){
     main{
-        width: 50%;
+        width: 70%;
+        /*background-color: #6A136A;*/
+        padding: 0 20px 0 20px;
+        border-left: 2px solid #ffc0f6;
+        border-right: 2px solid #ffc0f6;
     }
 }
 
