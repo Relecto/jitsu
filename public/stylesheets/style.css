@@ -15,9 +15,6 @@ header{
   padding: 5px 0 10px 0;
 }
 
-.content{
-}
-
 .logo{
   color: #ffffff;
   font-size: 20px;
@@ -28,37 +25,34 @@ header{
   font-size: 25px;
 }
 
-
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
+.slder_head{
+}
 
 .slide{
-  margin-left: -45px;
+  margin-left: -40px;
   margin-top: -20px;
   list-style: none;
 }
 
-.slide img{
+.slide img{/*
+  text-align: center;
+  overflow: hidden;*/
+  align: middle;
   position: fixed;
-  width: 100%;
+
+
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
-/*
+@media screen and (orientation: landscape){
+  .slide img{
+    width: 100%;
+  }
+}
 
-.slide:nth-of-type(1){
-  background: red;
+@media screen and (orientation: portrait){
+  .slide img{
+    height: 100%;
+  }
 }
-.slide:nth-of-type(2){
-  background: orange;
-}
-.slide:nth-of-type(3){
-  background: green;
-}
-.slide:nth-of-type(4){
-  background: blue;
-}
-.slide:nth-of-type(5){
-  background: purple;
-}*/
