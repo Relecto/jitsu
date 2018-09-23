@@ -9,13 +9,41 @@
     <div class="content">
 
         <div class="slder_head">
-            <ul id="slides">
-                <li class="slide showing"><a href="/killlakill/question"><img src="/img/anime_img1.png" alt="Kill la kill"></a></li>
-                <!--<li class="slide"><a href=""><img src="/img/anime_img2.jpg" alt="No game no life"></a></li>
-                <li class="slide"><a href=""><img src="/img/anime_img3.png" alt="Noragami"></a></li>
-            --></ul>
+            <a id="link" href="/ngnl/question">
+                <ul id="slides">
+                    <li class="slide showing">
+                        <img src="/img/anime_img1.png" alt="No game no life">
+                    </li>
+                    <li class="slide">
+                        <img src="/img/anime_img3.png" alt="Noragami">
+                    </li>
+                    <li class="slide">
+                        <img src="/img/anime_img2.jpg" alt="Kill la kill">
+                    </li>
+                </ul>
+            </a>
         </div>
 
     </div>
 
 </main>
+
+
+<script type="text/javascript">
+    const slides = document.querySelectorAll('#slides .slide');
+    const a = document.getElementById('link');
+    const links = [
+        '/ngnl/question',
+        '/noragami/question',
+        '/killlakill/question'
+    ];
+    var current = 0;
+    var interval = setInterval(next, 3000);
+
+    function next() {
+        slides[current].className = 'slide';
+        current = (current + 1) % slides.length;
+        slides[current].className = 'slide showing';
+        a.href = links[current];
+    }
+</script>
