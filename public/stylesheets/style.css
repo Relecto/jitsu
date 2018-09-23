@@ -11,16 +11,11 @@ body{
 header{
   width: 100%;
   background-color: #EA2AEA;
-  position: fixed;
-  top: 0px;
-  left: 0;
   display: flex;
-  padding: 5px 0 5px 0;
-  opacity: 999999;
+  padding: 5px 0 10px 0;
 }
 
 .content{
-    padding: 40px 0 0 0;
 }
 
 .logo{
@@ -46,6 +41,7 @@ just for appearance; change whatever you want
 }
 
 .slide img{
+  position: fixed;
   width: 100%;
 }
 
