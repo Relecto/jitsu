@@ -1,0 +1,44 @@
+main{
+    margin: auto;
+}
+
+.img_quiz {
+    max-height: 80vh;
+    overflow: hidden;
+
+}
+
+img {
+    /*max-width: 100%;*/
+    margin-left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.h2{
+    font-size: 20px;
+}
+
+.btn input{
+    background-color: #EA2AEA;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+@media screen and (orientation: landscape){
+    main{
+        width: 70%;
+        /*background-color: #6A136A;*/
+        padding: 0 20px 0 20px;
+        border-left: 2px solid #ffc0f6;
+        border-right: 2px solid #ffc0f6;
+    }
+}
+
+@media screen and (orientation: portrait){
+    main{
+        width: 100%;
+    }
+}

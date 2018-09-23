@@ -5,14 +5,21 @@ html, body{
 }
 
 body{
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-size: contain;
+  /*position: fixed;*/
+  background: url("/img/bg_anime1.jpg") fixed;
+  background-size: cover;
+}
+main {
+  background-color: white;
 }
 
 header{
   width: 100%;
   background-color: #EA2AEA;
-  display: flex;
   padding: 5px 0 10px 0;
+  box-sizing: border-box;
 }
 
 .logo{
@@ -21,60 +28,21 @@ header{
   margin-left: 30px;
 }
 
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+
 .logo span{
   font-size: 25px;
 }
 
-.slder_head{
-}
-
-
-#slides{
-  /*position: relative;*/
-  /*height: 150px;*/
-  /*padding: 0px;*/
-  /*margin: 0px;*/
-  list-style-type: none;
-}
-
-.slide{
-  margin-left: -40px;
-  margin-top: -20px;
-  list-style: none;
-
-  opacity: 0;
-  z-index: 1;
-
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
-.slide img{/*
-  text-align: center;
-  overflow: hidden;*/
-  align: middle;
-  position: fixed;
-
-
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
-.showing {
-  opacity: 1;
-  z-index: 2;
-}
-
 @media screen and (orientation: landscape){
-  .slide img{
-    width: 100%;
-  }
+
 }
 
 @media screen and (orientation: portrait){
-  .slide img{
-    height: 100%;
+  .logo{
+    display: block;
   }
 }
