@@ -1,6 +1,6 @@
 [
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/1.png",
     "question": "Где главная героиня аниме (Рюко) нашла свое оружие?",
     "variants": [
       "Оно торчало внутри ее отца",
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/2.jpg",
     "question": "Фамилия семьи, у которой приютилась Рюко?",
     "variants": [
       "Манкансеку",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/3.jpeg",
     "question": "Как Рюко назвала свою униформу?",
     "variants": [
       "Сэнкецу",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/4.jpeg",
     "question": "Как звали отряд, который выдвигал сопротивление школе Хоннодзи?",
     "variants": [
       "Нудистский Пляж",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/5.jpg",
     "question": " Каким оружием пользовалась главная героиня?",
     "variants": [
       "Гигантской половиной ножниц",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/Академия_Хоннодзи.jpg",
     "question": "По какой причине была создана Академия Ханнодзи?",
     "variants": [
       "Чтобы не дать Рюге захватить весь мир",
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/8.jpg",
     "question": "В чем заключается основная сила Харимэ?",
     "variants": [
       "Она полностью состоит из жизненных нитей",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/9.jpg",
     "question": "Как звали пса семьи Манкансеко?",
     "variants": [
       "Гатто",
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "picture": "/images/shiro.jpg",
+    "picture": "/images/10.png",
     "question": "По какой причине Кирюен считает всех людей низшими и зависимыми?",
     "variants": [
       "Потому что Кирюен шла по стопам своей матери",

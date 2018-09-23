@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var ngnl = require('./routes/ngnl/');
 var killlakill = require('./routes/killlakill');
+var noragami = require('./routes/noragami');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/killlakill', killlakill);
 app.use('/ngnl', ngnl);
+app.use('/noragami', noragami);
 
 
 // catch 404 and forward to error handler
