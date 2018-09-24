@@ -40,6 +40,30 @@ html, body {
     z-index: 2;
 }
 
+.title {
+    display: block;
+    float: left;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: YuGothic, bold, sans-serif;
+    font-size: 60px;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
+    /*background-color: #EA2AEA;*/
+    /*background-blend-mode: exclusion;*/
+}
+
+.english {
+    displat: block;
+    line-height: 70px;
+}
+
 @media screen and (orientation: landscape){
     .slide img{
         width: 100%;
