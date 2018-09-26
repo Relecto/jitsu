@@ -1,0 +1,64 @@
+.main{
+    margin: 0 auto;
+    width: 90%;
+    font-family: "Apple SD Gothic Neo", sans-serif;
+    font-weight: 700;
+
+}
+
+.wiki_content1{
+    border-radius: 4px;
+    background: #e68cd4;
+}
+
+.wiki_content1 h1{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.wiki_content1 p{
+    padding: 0 20px 20px 20px;
+    opacity: 0.8;
+    line-height: 1.5em;
+}
+
+.img_persone{
+    float: right;
+    width: 150px;
+}
+
+.img_persone1{
+    float: right;
+    width: 100px;
+}
+
+.img_persone2{
+    float: left;
+    width: 150px;
+    padding: 0 10px 0 0;
+}
+
+.img_persone3{
+    float: right;
+    width: 250px;
+}
+
+
+table{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-width: 1px 0 0 1px;
+}
+
+table tr{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+table th{
+    border: 1px solid black;
+}
+

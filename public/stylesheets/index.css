@@ -2,6 +2,10 @@ html, body {
     background-image: none;
 }
 
+.slider_head{
+    margin-top: 20px;
+}
+
 #slides{
     /*position: relative;*/
     /*height: 150px;*/

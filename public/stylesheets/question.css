@@ -1,3 +1,10 @@
+.body{
+    background-size: contain;
+    /*position: fixed;*/
+    background: url("/img/bg_anime1.jpg") fixed;
+    background-size: cover;
+}
+
 main{
     margin: auto;
 }
@@ -11,7 +18,7 @@ main{
 img {
     /*max-width: 100%;*/
     margin-left: 50%;
-
+    margin-top: 50px;
     transform: translateX(-50%);
 }
 
