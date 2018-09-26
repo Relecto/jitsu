@@ -3,8 +3,8 @@ html, body {
 }
 
 .slider_head{
-    margin-top: 20px;
-}
+     margin-top: 20px;
+ }
 
 #slides{
     /*position: relative;*/
@@ -44,7 +44,7 @@ html, body {
     z-index: 2;
 }
 
-.university {
+.title {
     display: block;
     float: left;
     position: fixed;
