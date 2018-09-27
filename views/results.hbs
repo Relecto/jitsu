@@ -1,16 +1,25 @@
+<link rel="stylesheet" href="/stylesheets/diploma.css">
+
 <main>
-    Вы ответили на {{score}} вопросов<br>
+   <div class="diploma_content">
 
-    {{#if isMax}}
-        Максимальный балл! <br>
-        Введите свое имя чтобы получить диплом:<br>
 
-        <form action="/{{{title}}}/diploma">
-            <input type="text" placeholder="Ваше имя" name="who">
-            <input type="submit">
-        </form>
-    {{else}}
-        Попробуйте еще раз<br>
-        <a href="/{{{title}}}/question">Начать сначала</a>
-    {{/if}}
+       Вы ответили на {{score}} вопросов<br>
+
+           {{#if isMax}}
+       Максимальный балл! <br>
+       Введите свое имя чтобы получить диплом:<br>
+
+       <form action="/{{{title}}}/diploma">
+       <input type="text" placeholder="Ваше имя" name="who" class="name_input">
+       <input type="submit">
+       </form>
+           {{else}}
+       Попробуйте еще раз<br>
+           <div class="btn_down_div">
+               <a href="/{{{title}}}/question" class="btn_down">Начать сначала</a>
+           </div>
+           {{/if}}
+
+   </div>
 </main>

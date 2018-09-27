@@ -1,0 +1,16 @@
+.diploma_content{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn_down_div{
+    margin-top: 10px;
+}
+
+.btn_down{
+    background: #e68cd4;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
