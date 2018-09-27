@@ -14,7 +14,9 @@
             html2canvas(document.querySelector('#capture'),
                     {scale: quality}
             ).then(canvas => {
+                // canvas.width = document.body.clientWidth;
                 let pdf = new jsPDF('p', 'mm', 'a4');
+                // pdf.addImage(canvas, 0, 0, 211,298);
                 pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, 211, 298);
                 pdf.save(filename);
             });
