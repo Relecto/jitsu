@@ -8,6 +8,6 @@ var diploma = require('./diploma');
 /* GET home page. */
 router.use('/', question);
 router.use('/', wiki);
-router.use('/', diploma)
+router.use('/', diploma);
 
 module.exports = router;

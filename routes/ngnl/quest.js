@@ -51,7 +51,13 @@ router.get('/results', (req, res, next) => {
     delete req.session.score;
     delete req.session.questionIndex;
 
-    res.send('Your score: ' + score);
+    res.render('results', {
+        title: "ngnl",
+        score: score,
+        isMax: score >= req.ngnl.length
+    })
+
+    //res.send('Your score: ' + score);
 });
 
 function shuffle(a) {

@@ -1,0 +1,16 @@
+<main>
+    Вы ответили на {{score}} вопросов<br>
+
+    {{#if isMax}}
+        Максимальный балл! <br>
+        Введите свое имя чтобы получить диплом:<br>
+
+        <form action="/{{{title}}}/diploma">
+            <input type="text" placeholder="Ваше имя" name="who">
+            <input type="submit">
+        </form>
+    {{else}}
+        Попробуйте еще раз<br>
+        <a href="/{{{title}}}/question">Начать сначала</a>
+    {{/if}}
+</main>

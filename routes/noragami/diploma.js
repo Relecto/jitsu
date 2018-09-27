@@ -20,7 +20,7 @@ router.use('/diploma', (req, res, next) => {
     let d = new Date();
     req.query.when = `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()}`;
 
-    res.render('diploma_ngnl', Object.assign(req.query, { layout: false }));
+    res.render('diploma_noragami', Object.assign(req.query, { layout: false }));
 });
 
 module.exports = router;
