@@ -3,7 +3,10 @@
     width: 90%;
     font-family: "Apple SD Gothic Neo", sans-serif;
     font-weight: 700;
+}
 
+body {
+    background: url("/img/bg_anime1.jpg") fixed;
 }
 
 .wiki_content1{
